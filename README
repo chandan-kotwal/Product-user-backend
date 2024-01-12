@@ -1,0 +1,51 @@
+Flask API with SQLAlchemy and Elasticsearch Integration
+
+Run ./setup.sh to start the server 
+
+
+Access the API at http://localhost:8085
+
+default user:password = admin:password
+
+Endpoints
+
+
+Health Check
+Endpoint: /health
+Method: GET
+Description: Returns a success message to indicate the health of the API.
+User Endpoints
+
+
+Get All Users:
+
+Endpoint: /api/v1/user
+Method: GET
+Description: Retrieves information about all users.
+Get Single User:
+
+Endpoint: /api/v1/user/<username>
+Method: GET
+Description: Retrieves information about a specific user.
+Create User:
+
+Endpoint: /api/v1/user
+Method: POST
+Description: Creates a new user. Requires JSON payload with username and password.
+
+
+
+List Items:
+
+Endpoint: /api/v1/item
+Method: GET
+Description: Retrieves all items from the Elasticsearch index.
+Default list of products is nothing /NULL
+
+
+Index Document:
+Endpoint: /api/v1/item
+Method: POST
+Description: Indexes a new document in Elasticsearch. Requires a JSON payload.
+
+

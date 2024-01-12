@@ -1,0 +1,6 @@
+Flask
+Flask-BasicAuth
+Flask-SQLAlchemy
+elasticsearch
+pymysql
+cryptography
